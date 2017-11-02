@@ -1,0 +1,49 @@
+.main{
+    width: 1200px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 10px 0;
+}
+.main img{
+    width: 370px;
+    height: 250px;
+}
+.main .img{
+    display: inline-block;
+    padding: 13px;
+    position: relative;
+}
+
+.main .img  .mark{
+    width: 390px;
+    height: 0;
+    background: rgba(0,0,0,0.2);
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    transition: all 0.5s linear;
+}
+.main .img:hover  .mark{
+    height: 270px;
+}
+
+button:hover{
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: 20px auto;
+    background: #0d0d0d;
+    color: white;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.banner{
+    margin: 10px auto;
+    width: 1200px;
+}
+.banner img{
+    width: 100%;
+}
+

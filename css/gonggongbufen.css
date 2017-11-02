@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: #ddd;
+    position: relative;
+}
+/*<!--头部-->*/
+.content{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background: #000;
+}
+.head{
+    width: 100%;
+    background: #000;
+    height: 60px;
+    color: white;
+}
+.head ul li{
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    padding:0 10px ;
+    margin: 20px 0;
+}
+.head ul li:hover a{
+    color: gray;
+}
+.head ul li img{
+    height: 50px;
+    width: 50px;
+    margin: -20px 2px;
+}
+.head ul li a{
+    color: white;
+}
+.head ul:nth-child(2) li{
+    float: right;
+}
+.head ul:nth-child(1) li:nth-child(-n+2){
+    border-right: 1px solid white;
+}
+
+/*<!--导航栏-->*/
+nav{
+    height: 80px;
+    width: 100%;
+    background: #ddd;
+    padding: 5px 0;
+    border-bottom: 1px solid #9b9b9b;
+}
+nav .contentt{
+    padding-bottom: 5px ;
+    border-bottom: 1px solid #9b9b9b;
+}
+.contentt{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow:row  nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+nav img{
+    width: 120px;
+    height: 80px;
+    margin-right: 20px;
+}
+nav ul li {
+    float: left;
+    padding:0 10px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+}
+nav ul li:nth-child(1) a, nav ul li:nth-child(3) a,nav ul li:nth-child(7) a,nav ul li:nth-child(12) a,nav ul li:nth-child(14) a{
+    font-size: 20px;
+}
+nav ul li a{
+    font-size:16px;
+    color: #595959;
+}
+nav ul li:hover {
+    background: #3e3e3e;
+}
+nav ul li:nth-child(2):hover,nav ul li:nth-child(6):hover,nav ul li:nth-child(11):hover,nav ul li:nth-child(13):hover{
+    background: transparent;
+}
+nav ul li:hover a{
+    color: white;
+}
+nav input{
+    display: inline-block;
+    margin: 0 0 0 20px;
+    width: 200px;
+    height: 30px;
+}
+nav i{
+    display: inline-block;
+    padding-top: 6px;
+    height:26px;
+    width: 30px;
+    text-align: center;
+    border: 1px solid #9b9b9b ;
+}
+nav i:hover{
+    background: #484848;
+    color: white;
+    cursor: pointer;
+}
+audio{
+    width: 100px;
+    margin-left: 30px ;
+}
+nav.guding{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 99;
+}
+#ul{
+    position: absolute;
+    width: 200px;
+    right: 171px;
+    top: 56px;
+    z-index: 99;
+    background: white;
+    border: 1px solid grey;
+}
+#ul li a{
+    text-align: left;
+    display: block;
+    width:  200px;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+}
+
+/*页脚*/
+footer{
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-top: 1px solid grey;
+    color: #4f4f4f;
+    font-size: 14px;
+}
+
+/*侧边*/
+.side{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.side .fanhui{
+    padding-top: 5px;
+    width: 80px;
+    height: 75px;
+    background: #6d6d6d;
+    color: white;
+    display: none;
+}
+.side .fanhui:hover{
+    background: #000;
+}
+.side .yijian{
+    padding-top: 10px;
+    width: 80px;
+    height: 70px;
+    background: #2197bd;
+    color: white;
+}
+.side .yijian:hover{
+    background: #1656bd;
+}
+.side i{
+    font-size: 30px;
+}
+.side p{
+    height: 40px;
+    line-height: 40px;
+}
+
+.mesg{
+    position: fixed;
+    right: 120px;
+    bottom: 20px;
+    width: 250px;
+    height: 250px;
+    background: lightskyblue;
+    border-radius: 5px;
+    border: 10px solid lightskyblue;
+    display: none;
+}
+.mesg textarea{
+    display: block;
+    margin: 10px 0;
+    width: 245px;
+    height: 170px;
+    border-radius: 5px;
+}
+.mesg button{
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background: #2197bd;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+}
+.mesg button:hover{
+    background: #bababa;
+    color: #2197bd;
+}
+.mesg .close{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+}
+.mesg .close:hover{
+    color:red;
+}
+
+.banner{
+    margin: 10px auto;
+    width: 1200px;
+}
+.banner img{
+    width: 100%;
+}

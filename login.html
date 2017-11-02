@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/login.css"  rel="stylesheet">
+    <!--<link rel="stylesheet" href="css/gonggongbufen.css">-->
+    <style>
+        .right>ul li{
+            float: right;
+            margin-top: 20px;
+            font-size: 14px;
+            padding: 0 5px;
+        }
+        .right>ul li:nth-child(2),.right>ul li:nth-child(3){
+            border-right: 1px solid grey;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="content">
+    <div class="left fix">
+       <p>发现更多精彩!</p>
+        <img src="images/upload/log1.jpg">
+        <img src="images/upload/log2.jpg">
+        <img src="images/upload/log3.jpg">
+        <img src="images/upload/log4.jpg">
+    </div>
+    <div class="right">
+        <form class="form" onsubmit="return check()" method="post">
+            <p>用户登录</p>
+            <input id='email' type="text" placeholder="微博账号/QQ号码/电子邮箱">
+            <input id="pwd" type="password" value="" placeholder="密码">
+            <input id="sub" type="submit" value="登录">
+            <input type="checkbox"><label>下次自动登录</label>
+        </form>
+        <div></div>
+        <div></div>
+        <ul>
+            <li><a href="#">意见反馈</a></li>
+            <li><a href="ris.html">注册新账号</a></li>
+            <li><a href="#">忘记密码？</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--公共部分2-->
+<!--页脚-->
+<footer>
+    <p>版权所有&copy;爱旅行</p>
+</footer>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    function  getCookie(key) {
+        var arr1=document.cookie.split('; ');
+        for(var i=0;i<arr1.length;i++){
+            var arr2=arr1[i].split('=');
+            if(arr2[0]==key){
+                return decodeURI(arr2[1]);
+            }
+        }
+    }
+
+    function check() {
+        var email=getCookie('email');
+        var pwd=getCookie('pwd');
+        console.log(email);
+        console.log(pwd);
+       if((email==$("#email").val())&&(pwd==$("#pwd").val())){
+           alert("登录成功，正在为您跳转主页面....");
+           window.location.href='index.html';
+           return false;
+       }
+        return false;
+    }
+</script>
+</body>
+
+</html>

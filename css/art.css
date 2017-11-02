@@ -1,0 +1,328 @@
+/*总体布局*/
+.main{
+    width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-flow:row  nowrap;
+    justify-content: center;
+}
+.left{
+    width: 850px;
+    margin-right: 20px;
+    background: #ffffff;
+    padding: 15px;
+}
+.right{
+    width: 300px;
+}
+
+/*art1*/
+/*左边*/
+
+.art-one .left .tui{
+    display: flex;
+}
+.art-one .left .one {
+    text-align: center;
+    color: #5e5e5e;
+    margin-bottom: 20px;
+}
+.art-one .left .one img{
+    display: inline-block;
+    margin: 10px 10px 0 10px;
+    width: 262px;
+}
+.art-one .left .two{
+    display: flex;
+    border-bottom: 1px dotted #cdcdcd;
+}
+.art-one .left .two img{
+    display: inline-block;
+    margin: 13px;
+    width: 360px;
+    height: 220px;
+}
+.art-one .left .two  p{
+    margin: 30px 0 0 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.art-one .left .two p span{
+    display: block;
+    font-weight: normal;
+    color: #797979;
+}
+.art-one .left .two p span:nth-child(1){
+    margin: 15px 0;
+}
+
+.art-one .left ul{
+    display: flex;
+    margin: 20px 20px;
+}
+.art-one .left ul li{
+    margin: 0 10px;
+    color: #444444;
+    cursor: pointer;
+}
+.art-one .left ul li:hover{
+    background: #2c2c2c;
+    margin: 0 10px;
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+/*右侧*/
+
+.art-one .right .icon{
+    height: 58px;
+    background: white;
+}
+.art-one .right .icon img{
+    height: 56px;
+}
+.art-one  .right .hot{
+    margin-top: 20px;
+    padding: 10px;
+    background: white;
+}
+.art-one  .right .hot h3{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 2px solid #c8c8c8;
+}
+.art-one .right .hot ul li{
+    padding: 5px 5px;
+    border-bottom: 1px dotted #cdcdcd;
+}
+.art-one  .right .hot ul li a {
+    font-size: 14px;
+    color: #7f7f7f;
+}
+
+/*art2*/
+/*左边*/
+
+.art-two .left h1{
+    padding: 0 10px;
+    font-weight: normal;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid gainsboro;
+}
+.art-two .left p:nth-child(3){
+    margin: 15px;
+    color: #949494;
+}
+.art-two .left p:nth-child(4){
+    padding: 0 30px;
+    height: 1300px;
+    line-height: 40px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.art-two .left ul{
+    display: flex;
+    margin: 20px 20px;
+    font-size: 16px;
+}
+.art-two .left ul li{
+    margin: 0 25px;
+    color: #444444;
+    cursor: pointer;
+    position: relative;
+}
+.art-two .left ul li span{
+    display: inline-block;
+    position: absolute;
+    top: -5px;
+    left: -35px;
+    width: 30px; ;
+    height: 30px;
+}
+.art-two .left ul li:nth-child(2) span{
+    background: url("../images/1.JPG");
+}
+.art-two .left ul li:nth-child(3) span{
+    background: url("../images/2.JPG");
+}
+.art-two .left ul li:nth-child(4) span{
+    background: url("../images/3.JPG");
+}
+.art-two .left ul li:nth-child(5) span{
+    background: url("../images/4.JPG");
+}
+.art-two .left ul li:nth-child(6) span{
+    background: url("../images/5.JPG");
+}
+
+
+.art-two .right .like{
+    background: white;
+    padding: 40px;
+}
+.art-two .right .like ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    height:30px;
+    color: #9b9b9b;
+}
+.art-two .right .like ul li:hover{
+    background: #1b1b1b;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.art-two  .right .user{
+    background: white;
+    padding: 15px;
+    margin: 20px 0;
+    display: flex;
+}
+.art-two  .right .user p{
+    margin:5px 0 0 20px;
+    font-size: 14px;
+    color: #6b6b6b;
+}
+.art-two .right .icon{
+    height: 58px;
+    background: white;
+}
+.art-two  .right .icon img{
+    height: 56px;
+}
+.right .hot{
+    margin-top: 20px;
+    padding: 10px;
+    background: white;
+}
+.art-two  .right .hot h3{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 2px solid #c8c8c8;
+}
+.art-two .right .hot ul li{
+    padding: 5px 5px;
+    border-bottom: 1px dotted #cdcdcd;
+}
+.art-two .right .hot ul li a {
+    font-size: 14px;
+    color: #7f7f7f;
+}
+
+
+/*art3*/
+/*左边*/
+
+
+.art-three .left img{
+    width: 100%;
+}
+.art-three .left h1{
+    padding: 0 10px;
+    font-weight: normal;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid gainsboro;
+}
+.art-three .left p:nth-child(3){
+    margin: 15px;
+    color: #949494;
+}
+
+.art-three .left ul{
+    display: flex;
+    margin: 20px 20px;
+    font-size: 16px;
+}
+.art-three .left ul li{
+    margin: 0 25px;
+    color: #444444;
+    cursor: pointer;
+    position: relative;
+}
+.art-three .left ul li span{
+    display: inline-block;
+    position: absolute;
+    top: -5px;
+    left: -35px;
+    width: 30px; ;
+    height: 30px;
+}
+.art-three .left ul li:nth-child(2) span{
+    background: url("../images/1.JPG");
+}
+.art-three .left ul li:nth-child(3) span{
+    background: url("../images/2.JPG");
+}
+.art-three .left ul li:nth-child(4) span{
+    background: url("../images/3.JPG");
+}
+.art-three .left ul li:nth-child(5) span{
+    background: url("../images/4.JPG");
+}
+.art-three .left ul li:nth-child(6) span{
+    background: url("../images/5.JPG");
+}
+
+
+.art-three .right .like{
+    background: white;
+    padding: 40px;
+}
+.art-three .right .like ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    height:30px;
+    color: #9b9b9b;
+}
+.art-three .right .like ul li:hover{
+    background: #1b1b1b;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.art-three .right .user{
+    background: white;
+    padding: 15px;
+    margin: 20px 0;
+    display: flex;
+}
+.art-three .right .user p{
+    margin:5px 0 0 20px;
+    font-size: 14px;
+    color: #6b6b6b;
+}
+.art-three .right .icon{
+    height: 58px;
+    background: white;
+}
+.art-three .right .icon img{
+    height: 56px;
+}
+.art-three .right .hot{
+    margin-top: 20px;
+    padding: 10px;
+    background: white;
+}
+.art-three .right .hot h3{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 2px solid #c8c8c8;
+}
+.art-three .right .hot ul li{
+    padding: 5px 5px;
+    border-bottom: 1px dotted #cdcdcd;
+}
+.art-three .right .hot ul li a {
+    font-size: 14px;
+    color: #7f7f7f;
+}
